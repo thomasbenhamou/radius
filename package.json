@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:start": "docker-compose up -d",
+    "db:stop": "docker-compose down",
+    "db:reset": "docker-compose down -v && docker-compose up -d",
+    "db:studio": "prisma studio",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "@types/node": "^24.3.0",
+    "nuxt": "^4.0.3",
+    "prisma": "^6.15.0",
+    "vue": "^3.5.20",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.8.0",
+    "vuetify-nuxt-module": "^0.5.0"
+  }
+}
